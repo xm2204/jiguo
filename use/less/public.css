@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.box {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 30px;
+  /*两大部分*/
+}
+.box .in-h {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f0f0f0;
+}
+.box .in-h h1 {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 20px 0;
+  text-align: center;
+}
+.box .in-h p {
+  width: 30%;
+  margin: 0 auto;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding-bottom: 4px;
+}
+.box .in-h p a {
+  float: left;
+  text-align: center;
+  width: 50%;
+  font-size: 18px;
+  color: #a3a3ac;
+}
+.box .in-h p .d_a {
+  color: #fe5931;
+  border-bottom: 4px solid #fe5431;
+}
