@@ -10,6 +10,7 @@
   overflow: hidden;
   margin-bottom: 30px;
   /*两大部分*/
+  /*内容点击*/
 }
 .box .in-h {
   width: 100%;
@@ -22,7 +23,7 @@
   padding: 20px 0;
   text-align: center;
 }
-.box .in-h p {
+.box .in-h .h_p {
   width: 30%;
   margin: 0 auto;
   height: 50px;
@@ -30,14 +31,30 @@
   text-align: center;
   padding-bottom: 4px;
 }
-.box .in-h p a {
+.box .in-h .h_p a {
   float: left;
   text-align: center;
   width: 50%;
   font-size: 18px;
   color: #a3a3ac;
 }
-.box .in-h p .d_a {
+.box .in-h .h_p .d_a {
   color: #fe5931;
   border-bottom: 4px solid #fe5431;
+}
+.box .hp {
+  width: 45%;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+}
+.box .hp a {
+  float: left;
+  text-align: center;
+  width: 25%;
+  font-size: 20px;
+  color: #a3a3ac;
+}
+.box .hp .p_a {
+  color: black;
 }
