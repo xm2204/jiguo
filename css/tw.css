@@ -36,6 +36,7 @@
   transition: color 0.2s ease;
   padding: 0 25px;
   font-size: 20px;
+  color: #a3a3a3;
   float: left;
 }
 .td .nr .td-ul li a:hover {
@@ -67,14 +68,14 @@
   border-radius: 3px;
   position: absolute;
   top: 25px;
-  left: 1120px;
+  left: 1175px;
+  color: #fe5341;
 }
 .td .nr .a2 .a3:hover {
   color: #fff;
   background-color: red;
 }
 .wbu {
-  width: 1349px;
   height: 360px;
   background-color: #505050;
   padding: 40px 0 15px;
