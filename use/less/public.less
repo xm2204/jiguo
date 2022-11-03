@@ -105,6 +105,7 @@
                 background-color: rgb(254, 84, 49);
                 color: white;
                 border-radius: 0 0 0 5px;
+                z-index: 1;
             }
 
             .m_y {
@@ -120,6 +121,7 @@
                 background-color: rgb(251, 244, 203);
                 color: rgb(129, 123, 106);
                 border-radius: 0 0 0 5px;
+                z-index: 1;
 
             }
 
@@ -131,6 +133,25 @@
 
             img {
                 width: 100%;
+
+                &:hover {
+                    animation: shan ease 1.2s infinite;
+
+                }
+
+                @keyframes shan {
+                    0% {
+                        opacity: .0.8;
+                    }
+
+                    50% {
+                        opacity: 0.2;
+                    }
+
+                    100% {
+                        opacity: 0.8;
+                    }
+                }
             }
 
             .m_nn {
