@@ -126,20 +126,48 @@ li {
                             height: 50px;
                             .fr;
                             margin-right: 10px;
-
-                            &>.like {
-                                background-color: coral;
-                                padding-left: 15px;
-                                background: url(../play/img/xin.png) no-repeat 0px 1px;
-                                background-size: 60%;
+                            &>.like{
+                                width: 40px;
+                                line-height: 50px;
+                                .fl;
+                                cursor: pointer;
+                                &>img{
+                                    width: 14px;
+                                    height: 14px;
+                                    margin: 0px 5px -3px 0px;
+                                }
+                                &>.num1{
+                                    line-height: 50px;
+                                }
+                            }
+                            &>.comment{
+                                width: 40px;
+                                line-height: 50px;
+                                .fl;
+                                cursor: pointer;
+                                &>img{
+                                    width: 14px;
+                                    height: 14px;
+                                    margin: 0px 5px -3px 0px;
+                                }
+                                &>.num2{
+                                    line-height: 50px;
+                                }
                             }
 
-                            &>.comment {
-                                // background-color: cornflowerblue;
-                                padding-left: 15px;
-                                background: url(../play/img/reply.png) no-repeat 0px 1px;
-                                background-size: 60%;
-                            }
+                            // &>.like {
+                            //     background-color: coral;
+                            //     padding-left: 15px;
+                            //     background: url(../play/img/xin.png) no-repeat 0px 1px;
+                            //     background-size: 60%;
+                            // }
+
+                            // &>.comment {
+                            //     // background-color: cornflowerblue;
+                            //     padding-left: 15px;
+                            //     background: url(../play/img/reply.png) no-repeat 0px 1px;
+                            //     background-size: 60%;
+                            // }
                         }
                     }
                 }
@@ -149,17 +177,20 @@ li {
 
     &>.play-more {
         width: @wid;
-        height: 160px;
-        line-height: 160px;
+        height: 30px;
+        line-height: 30px;
         // background-color: aqua;
         text-align: center;
 
-        &>a {
+        &>p {
+            display: inline-block;
             font-size: 16px;
             .col;
             padding-left: 25px;
             // background-color: aquamarine;
-            background: url(../play/img/more.png)no-repeat 0px 8px;
+            background: url(../../play/img/more.png)no-repeat 5px 13px;
+            cursor: pointer;
+            // background-color: aqua;
         }
     }
 }
