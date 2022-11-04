@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>酷玩最新</title>
-    <link rel="stylesheet" href="../css/play.css">
+    <title>酷玩-最新</title>
+    <link rel="stylesheet" href="../css/play/play.css">
 </head>
+
 <body>
     <!-- 引入共用头部 -->
     <div>
@@ -14,333 +16,27 @@
             width="100%" height="76px">
         </iframe>
     </div>
-        <!-- 酷玩头部 -->
-        <div class="play-box">
-            <h1>发现酷玩</h1>
-            <nav class="play-nav">
-                <a href="">最新</a>
-                <a href="">最热</a>
-                <a href="">品类</a>
-            </nav>
+    <!-- 酷玩头部 -->
+    <div class="play-box">
+        <h1>发现酷玩</h1>
+        <nav class="play-nav">
+            <a href="./play.html">最新</a>
+            <a href="./hot.html">最热</a>
+            <a href="./category.html">品类</a>
+        </nav>
+    </div>
+    <!-- 加载时页面数据时有一个加载过渡的图片 -->
+    <!-- <img class="loading" src="./img/loading-icon.gif" alt=""> -->
+    <!-- 酷玩-最新的内容 -->
+    <div class="content-box">
+        <!-- ul里边包含4排，每排4个li ,图文详情介绍 -->
+        <ul class="my-div" id='box'>
+        </ul>
+        <div class="play-more">
+            <p class="more-btn" id="btn">点击加载更多</p>
         </div>
-        <!-- 酷玩内容 -->
-        <div class="content-box">
-            <!-- ul里边包含4排，每排4个li ,图文详情介绍 -->
-            <ul class="my-div">
-                <!-- 第一排 -->
-                <!-- SCiO 微型光谱仪 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k1.jpg" alt="">
-                        <div class="info">
-                            <p class="name">SCiO 微型光谱仪</p>
-                            <p class="text">可以测定食物成分及营养</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 1212</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- B&O BeoSound 35 音响 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k2.jpg" alt="">
-                        <div class="info">
-                            <p class="name">B&O BeoSound 35 音响</p>
-                            <p class="text">支持所有音乐流媒体服务</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 512</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- Mozbii 触控吸色笔 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k3.jpg" alt="">
-                        <div class="info">
-                            <p class="name">Mozbii 触控吸色笔</p>
-                            <p class="text">能吸取65000种颜色</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 暂无</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- XPLORER 2 航拍飞行器 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k4.jpg" alt="">
-                        <div class="info">
-                            <p class="name">XPLORER 2 航拍飞行器</p>
-                            <p class="text">搭载自动避障系统</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 433</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- 第二排 -->
-                <!-- SCiO 微型光谱仪 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k1.jpg" alt="">
-                        <div class="info">
-                            <p class="name">SCiO 微型光谱仪</p>
-                            <p class="text">可以测定食物成分及营养</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 1212</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- B&O BeoSound 35 音响 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k2.jpg" alt="">
-                        <div class="info">
-                            <p class="name">B&O BeoSound 35 音响</p>
-                            <p class="text">支持所有音乐流媒体服务</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 512</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- Mozbii 触控吸色笔 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k3.jpg" alt="">
-                        <div class="info">
-                            <p class="name">Mozbii 触控吸色笔</p>
-                            <p class="text">能吸取65000种颜色</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 暂无</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- XPLORER 2 航拍飞行器 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k4.jpg" alt="">
-                        <div class="info">
-                            <p class="name">XPLORER 2 航拍飞行器</p>
-                            <p class="text">搭载自动避障系统</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 433</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- 第三排 -->
-                <!-- SCiO 微型光谱仪 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k1.jpg" alt="">
-                        <div class="info">
-                            <p class="name">SCiO 微型光谱仪</p>
-                            <p class="text">可以测定食物成分及营养</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 1212</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- B&O BeoSound 35 音响 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k2.jpg" alt="">
-                        <div class="info">
-                            <p class="name">B&O BeoSound 35 音响</p>
-                            <p class="text">支持所有音乐流媒体服务</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 512</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- Mozbii 触控吸色笔 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k3.jpg" alt="">
-                        <div class="info">
-                            <p class="name">Mozbii 触控吸色笔</p>
-                            <p class="text">能吸取65000种颜色</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 暂无</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- XPLORER 2 航拍飞行器 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k4.jpg" alt="">
-                        <div class="info">
-                            <p class="name">XPLORER 2 航拍飞行器</p>
-                            <p class="text">搭载自动避障系统</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 433</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- 第四排 -->
-                <!-- SCiO 微型光谱仪 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k1.jpg" alt="">
-                        <div class="info">
-                            <p class="name">SCiO 微型光谱仪</p>
-                            <p class="text">可以测定食物成分及营养</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 1212</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- B&O BeoSound 35 音响 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k2.jpg" alt="">
-                        <div class="info">
-                            <p class="name">B&O BeoSound 35 音响</p>
-                            <p class="text">支持所有音乐流媒体服务</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 512</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- Mozbii 触控吸色笔 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k3.jpg" alt="">
-                        <div class="info">
-                            <p class="name">Mozbii 触控吸色笔</p>
-                            <p class="text">能吸取65000种颜色</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 暂无</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- XPLORER 2 航拍飞行器 -->
-                <li>
-                    <a href="#">
-                        <img src="../img/k4.jpg" alt="">
-                        <div class="info">
-                            <p class="name">XPLORER 2 航拍飞行器</p>
-                            <p class="text">搭载自动避障系统</p>
-                            <div class="tip">
-                                <span class="left-price">￥ 433</span>
-                                <div class="right-icons">
-                                    <!-- 喜欢 -->
-                                    <span class="like">3</span>
-                                    <!-- 评论 -->
-                                    <span class="comment">3</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <div class="play-more">
-                <a href="" class="more-btn">点击加载更多</a>
-            </div>
-        </div>
-    
+    </div>
+
     <!-- 引入共用底部 -->
     <div>
         <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src="../foot.html"
@@ -348,4 +44,7 @@
         </iframe>
     </div>
 </body>
+
 </html>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/play.js" type="text/javascript" charset="utf-8"></script>

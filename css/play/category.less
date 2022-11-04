@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+// 封装变量
+@wid: 100%;
+
+.col(@col: rgb(254, 84, 49)) {
+    color: @col;
+}
+
+.fl() {
+    float: left;
+}
+
+.fr() {
+    float: right;
+}
+
+/* 酷玩-品类头部 */
+.play-box {
+    width: @wid;
+    height: 120px;
+    // background-color: aqua;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 10px;
+
+    &>h1 {
+        // background-color: blue;
+        height: 70px;
+        line-height: 70px;
+        font-weight: 400;
+    }
+
+    &>.play-nav {
+        // background-color: blueviolet;
+        width: @wid;
+        height: 50px;
+        line-height: 47px;
+
+        &>a {
+            // background-color: brown;
+            font-size: 15px;
+            color: gray;
+            font-weight: 400;
+            display: inline-block;
+            width: 150px;
+
+            &:nth-of-type(3) {
+                border-bottom: 3px solid rgb(254, 84, 49);
+                margin-bottom: 10px;
+                .col;
+            }
+        }
+
+    }
+}
+
+/* 酷玩-品类的内容 */
+.content-box {
+    width: @wid;
+    height: 100%;
+    background-color: rgb(247, 247, 247);
+
+    &>ul {
+        width: (@wid)-20%;
+        margin: 0 auto;
+        // background-color: aqua;
+        padding-top: 25px;
+
+        &>li {
+            width: @wid;
+            border: 1px solid rgba(239, 229, 229);
+            border-radius: 5px;
+            margin-bottom: 35px;
+            box-sizing: border-box;
+
+            &>h3 {
+                font-weight: 400;
+                border-left: 5px solid rgb(254, 84, 49);
+                margin-top: 20px;
+                line-height: 25px;
+                text-indent: 1em;
+            }
+
+            &>.top {
+                margin-top: 30px;
+                border-bottom: 1px dashed rgb(205, 203, 203);
+
+                &::after {
+                    clear: both;
+                    display: block;
+                    content: '';
+                }
+
+                &>.list {
+                    width: @wid;
+
+                    &>a {
+                        display: block;
+                        width: 130px;
+                        height: 150px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: rgb(160, 158, 158);
+                        padding-left: 20px;
+                        .fl;
+
+                        // background-color: blueviolet;
+                        &>img {
+                            width: 96px;
+                            height: 96px;
+                        }
+
+                        &:hover {
+                            .col;
+                        }
+
+                        &>p {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+
+            &>.bottom {
+                margin-top: 8px; 
+                margin-bottom: 25px;  
+                margin-left: 10px;         
+                &::after {
+                    clear: both;
+                    display: block;
+                    content: '';
+                }
+
+                &>.list {
+                    width: @wid;
+
+                    &>a {
+                        display: block;
+                        width: 150px;
+                        line-height: 35px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: rgb(160, 158, 158);
+                        .fl;
+                        &:hover {
+                            .col;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

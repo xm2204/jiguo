@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+// 封装变量
+@wid: 100%;
+
+.col(@col: rgb(254, 84, 49)) {
+    color: @col;
+}
+
+.fl() {
+    float: left;
+}
+
+.fr() {
+    float: right;
+}
+
+/* 酷玩-最新头部 */
+.play-box {
+    width: @wid;
+    height: 120px;
+    // background-color: aqua;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 10px;
+
+    &>h1 {
+        // background-color: blue;
+        height: 70px;
+        line-height: 70px;
+        font-weight: 400;
+    }
+
+    &>.play-nav {
+        // background-color: blueviolet;
+        width: @wid;
+        height: 50px;
+        line-height: 47px;
+
+        &>a {
+            // background-color: brown;
+            font-size: 15px;
+            color: gray;
+            font-weight: 400;
+            display: inline-block;
+            width: 150px;
+
+            &:nth-of-type(1) {
+                border-bottom: 3px solid rgb(254, 84, 49);
+                margin-bottom: 10px;
+                .col;
+            }
+        }
+
+    }
+}
+// 页面加载时出现的过度用的loading图 
+// .loading{
+//     width: 20px;
+//     height: 20px;
+//     margin: 0 auto;
+// }
+/* 酷玩-最新的内容 */
+.content-box {
+    width: @wid;
+    height: 100%;
+    background-color: rgb(247, 247, 247);
+
+    &>.my-div {
+        width: 1000px;
+        margin: 0 auto;
+        // background-color: aqua;
+
+        &::after {
+            clear: both;
+            display: block;
+            content: "";
+        }
+
+        &>li {
+            width: 209px;
+            height: 230px;
+            margin-top: 20px;
+            .fl;
+            overflow: hidden;
+            margin-left: 30px;
+            border: 1px solid rgba(239, 229, 229, .5);
+            border-radius: 5px;
+
+
+            &>a {
+                &>img {
+                    width: @wid;
+                    height: 130px;
+                }
+
+                &>.info {
+                    font-size: 12px;
+                    color: gray;
+                    padding-left: 10px;
+                    font-weight: 400;
+                    margin-top: 5px;
+
+                    &>.name {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: rgb(40, 39, 39);
+                    }
+
+                    &>.text {
+                        line-height: 20px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+                    &>.tip {
+                        line-height: 20px;
+                        margin-top: 18px;
+
+                        &>.left-price {
+                            // display: block;
+                            height: 20px;
+                            .col;
+                            .fl;
+                        }
+
+
+                        &>.right-icons {
+                            // display: block;
+                            width: 90px;
+                            height: 20px;
+                            // background-color: brown;
+                            .fr;
+
+
+                            &>.like {
+                                width: 40px;
+                                height: 20px;
+                                // background-color: chartreuse;
+                                .fl;
+                                cursor: pointer;
+                                &>img {
+                                    width: 14px;
+                                    height: 14px;
+                                    margin: 0px 5px -3px 0px;
+
+                                }
+
+                                // &>.num1{
+                                //     line-height: 20px;                             
+                                // }
+                            }
+
+                            &>.comment {
+                                width: 40px;
+                                height: 20px;
+                                // background-color: blue;
+                                .fr;
+                                cursor: pointer;
+                                margin-right: 10px;
+
+
+                                &>img {
+                                    width: 14px;
+                                    height: 14px;
+                                    margin: 0px 5px -3px 0px;
+                                }
+
+                                // &>.num2 {
+                                //     line-height: 20px;
+                                // }
+
+                            }
+
+                            // &>.like {
+                            //     background-color: coral;
+                            //     padding-left: 15px;
+                            //     background: url(../play/img/xin.png) no-repeat 0px 1px;
+                            //     background-size: 60%;
+                            // }
+                            // &>.comment {
+                            //     // background-color: cornflowerblue;
+                            //     padding-left: 15px;
+                            //     background: url(../play/img/reply.png) no-repeat 0px 1px;
+                            //     background-size: 60%;
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &>.play-more {
+        width: @wid;
+        height: 30px;
+        line-height: 30px;
+        // background-color: aqua;
+        text-align: center;
+
+        &>p {
+            display: inline-block;
+            font-size: 16px;
+            .col;
+            padding-left: 25px;
+            // background-color: aquamarine;
+            background: url(../../play/img/more.png)no-repeat 5px 13px;
+            cursor: pointer;
+            // background-color: aqua;
+        }
+    }
+}
+
+/* 悬浮动画 */
+.my-div {
+    &>li {
+        &>a {
+            &>img:hover {
+                animation: flicker 1.5s linear infinite;
+
+                @keyframes flicker {
+                    0% {
+                        opacity: 1;
+                    }
+
+                    50% {
+                        opacity: .5;
+                    }
+
+                    100% {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* 酷玩-最热头部 */
+.play-box {
+  width: 100%;
+  height: 120px;
+  line-height: 80px;
+  text-align: center;
+  margin-top: 10px;
+}
+.play-box > h1 {
+  height: 70px;
+  line-height: 70px;
+  font-weight: 400;
+}
+.play-box > .play-nav {
+  width: 100%;
+  height: 50px;
+  line-height: 47px;
+}
+.play-box > .play-nav > a {
+  font-size: 15px;
+  color: gray;
+  font-weight: 400;
+  display: inline-block;
+  width: 150px;
+}
+.play-box > .play-nav > a:nth-of-type(2) {
+  border-bottom: 3px solid #fe5431;
+  margin-bottom: 10px;
+  color: #fe5431;
+}
+/* 酷玩-最热的内容 */
+.content-box {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+.content-box > .my-div {
+  width: 80%;
+  margin: 0 auto;
+}
+.content-box > .my-div::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+.content-box > .my-div > li {
+  width: 209px;
+  height: 230px;
+  margin-top: 20px;
+  float: left;
+  overflow: hidden;
+  margin-left: 30px;
+  border: 1px solid rgba(239, 229, 229, 0.5);
+  border-radius: 5px;
+}
+.content-box > .my-div > li > a > img {
+  width: 100%;
+  height: 130px;
+}
+.content-box > .my-div > li > a > .info {
+  font-size: 12px;
+  color: gray;
+  padding-left: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 5px;
+}
+.content-box > .my-div > li > a > .info > .name {
+  font-size: 14px;
+  color: #282727;
+}
+.content-box > .my-div > li > a > .info > .tip {
+  line-height: 50px;
+}
+.content-box > .my-div > li > a > .info > .tip > .left-price {
+  display: block;
+  height: 50px;
+  color: #fe5431;
+  float: left;
+}
+.content-box > .my-div > li > a > .info > .tip > .right-icons {
+  display: block;
+  height: 50px;
+  float: right;
+  margin-right: 10px;
+}
+.content-box > .my-div > li > a > .info > .tip > .right-icons > .like {
+  width: 40px;
+  line-height: 50px;
+  float: left;
+  cursor: pointer;
+}
+.content-box > .my-div > li > a > .info > .tip > .right-icons > .like > img {
+  width: 14px;
+  height: 14px;
+  margin: 0px 5px -3px 0px;
+}
+.content-box > .my-div > li > a > .info > .tip > .right-icons > .like > .num1 {
+  line-height: 50px;
+}
+.content-box > .my-div > li > a > .info > .tip > .right-icons > .comment {
+  width: 40px;
+  line-height: 50px;
+  float: left;
+  cursor: pointer;
+}
+.content-box > .my-div > li > a > .info > .tip > .right-icons > .comment > img {
+  width: 14px;
+  height: 14px;
+  margin: 0px 5px -3px 0px;
+}
+.content-box > .my-div > li > a > .info > .tip > .right-icons > .comment > .num2 {
+  line-height: 50px;
+}
+.content-box > .play-more {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.content-box > .play-more > p {
+  display: inline-block;
+  font-size: 16px;
+  color: #fe5431;
+  padding-left: 25px;
+  background: url(../../play/img/more.png) no-repeat 5px 13px;
+  cursor: pointer;
+}
+/* 悬浮动画 */
+.my-div > li > a > img:hover {
+  animation: flicker 1.5s linear infinite;
+}
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

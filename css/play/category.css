@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* 酷玩-品类头部 */
+.play-box {
+  width: 100%;
+  height: 120px;
+  line-height: 80px;
+  text-align: center;
+  margin-top: 10px;
+}
+.play-box > h1 {
+  height: 70px;
+  line-height: 70px;
+  font-weight: 400;
+}
+.play-box > .play-nav {
+  width: 100%;
+  height: 50px;
+  line-height: 47px;
+}
+.play-box > .play-nav > a {
+  font-size: 15px;
+  color: gray;
+  font-weight: 400;
+  display: inline-block;
+  width: 150px;
+}
+.play-box > .play-nav > a:nth-of-type(3) {
+  border-bottom: 3px solid #fe5431;
+  margin-bottom: 10px;
+  color: #fe5431;
+}
+/* 酷玩-品类的内容 */
+.content-box {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+.content-box > ul {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+.content-box > ul > li {
+  width: 100%;
+  border: 1px solid rgba(239, 229, 229);
+  border-radius: 5px;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+}
+.content-box > ul > li > h3 {
+  font-weight: 400;
+  border-left: 5px solid #fe5431;
+  margin-top: 20px;
+  line-height: 25px;
+  text-indent: 1em;
+}
+.content-box > ul > li > .top {
+  margin-top: 30px;
+  border-bottom: 1px dashed #cdcbcb;
+}
+.content-box > ul > li > .top::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.content-box > ul > li > .top > .list {
+  width: 100%;
+}
+.content-box > ul > li > .top > .list > a {
+  display: block;
+  width: 130px;
+  height: 150px;
+  text-align: center;
+  font-size: 14px;
+  color: #a09e9e;
+  padding-left: 20px;
+  float: left;
+}
+.content-box > ul > li > .top > .list > a > img {
+  width: 96px;
+  height: 96px;
+}
+.content-box > ul > li > .top > .list > a:hover {
+  color: #fe5431;
+}
+.content-box > ul > li > .top > .list > a > p {
+  margin-top: 10px;
+}
+.content-box > ul > li > .bottom {
+  margin-top: 8px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+.content-box > ul > li > .bottom::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.content-box > ul > li > .bottom > .list {
+  width: 100%;
+}
+.content-box > ul > li > .bottom > .list > a {
+  display: block;
+  width: 150px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+  color: #a09e9e;
+  float: left;
+}
+.content-box > ul > li > .bottom > .list > a:hover {
+  color: #fe5431;
+}
