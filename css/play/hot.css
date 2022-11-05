@@ -45,7 +45,7 @@ li {
   background-color: #f7f7f7;
 }
 .content-box > .my-div {
-  width: 80%;
+  width: 1000px;
   margin: 0 auto;
 }
 .content-box > .my-div::after {
