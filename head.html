@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/tw.css">
 </head>
+
 <body>
     <!-- 头部导航条 -->
     <div class="td">
         <!-- 内容 -->
         <div class="nr">
-             <div class="logo"> 
+            <div class="logo">
                 <a href="./index.html">
                     <img src="./img/logonew.png" alt="">
                 </a>
-            </div> 
+            </div>
 
             <!-- 文字 -->
             <ul class="td-ul">
-                <li><a href="">首页</a></li>
+                <li><a href="./index.html">首页</a></li>
                 <li><a href="">酷玩</a></li>
                 <li><a href="">导购</a></li>
                 <li><a href="">试用</a></li>
@@ -29,11 +31,30 @@
             <!-- 注册 -->
             <div class="a1"><a href="" id="login"></a></div>
             <!-- 登录 -->
-            <div class="a2"><a href="" class="a3">注册</a></div>
+            <div class="a2">
+                <a href="./register.html" class="a3">注册</a>
+                <button class="tuichu" onclick="exitu()">退出</button>
+            </div>
         </div>
     </div>
-
-
-    
 </body>
+
 </html>
+<script src="./js/Cookie.js"></script>
+<script>
+    var zhuce = document.getElementsByClassName('a3')[0]
+    var tuichu = document.getElementsByClassName('tuichu')[0]
+    if (getCookie('user') == '' || getCookie('user') == null) {
+        zhuce.innerHTML = '注册'
+    } else {
+        zhuce.innerHTML = getCookie('user')
+        tuichu.style.display = 'block';
+        function exitu() {
+            removeCookie('user');
+            zhuce.innerHTML='注册'
+            tuichu.style.display = 'none';
+            //刷新部分
+            // load_data();
+        }
+    }
+</script>

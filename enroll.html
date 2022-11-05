@@ -106,6 +106,7 @@
 </body>
 
 </html>
+<script src="./js/Cookie.js"></script>
 <script>
     var user = document.getElementById('user');
     var mima = document.getElementById('mima');
@@ -115,9 +116,9 @@
         if (user.value == user_ && mima.value == mima_) {
             alert('登录成功！')
             location.href = './index.html';
+            
         } else {
             alert('用户名不存在,或密码不正确');
         }
     }
 </script>
-<script src="./js/Cookie.js"></script>
