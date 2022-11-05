@@ -49,7 +49,7 @@
             top: 24px;
         }
 
-        .zhuce-1>form {
+        .zhuce-1>section {
             width: 400px;
             margin: 50px auto 150px;
         }
@@ -77,29 +77,29 @@
             color: #a3a3a3;
         }
 
-        .zhuce-1>form>p:nth-of-type(2)>input {
+        .zhuce-1>section>p:nth-of-type(2)>input {
             width: 245px;
         }
 
-        .zhuce-1>form>p:nth-of-type(2) {
+        .zhuce-1>section>p:nth-of-type(2) {
             position: relative;
         }
 
-        .zhuce-1>form>p:nth-of-type(2)>img {
+        .zhuce-1>section>p:nth-of-type(2)>img {
             position: absolute;
             bottom: 0;
             right: 0;
         }
 
-        .zhuce-1>form>p:nth-of-type(3)>input {
+        .zhuce-1>section>p:nth-of-type(3)>input {
             width: 245px;
         }
 
-        .zhuce-1>form>p:nth-of-type(3) {
+        .zhuce-1>section>p:nth-of-type(3) {
             position: relative;
         }
 
-        .zhuce-1>form>p:nth-of-type(3)>button {
+        .zhuce-1>section>p:nth-of-type(3)>button {
             position: absolute;
             bottom: 0;
             right: 0;
@@ -125,10 +125,8 @@
     <section class="zhuce">
         <div class="zhuce-1">
             <h2>注册极果</h2>
-            <form class="regForm" name="my_f1" action="" method="post" onsubmit="return check(this);">
-                <p><input type="text" id="shoujihao" placeholder="请输入登录手机号"
-                        pattern="^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$"
-                        required="required"></p>
+            <section>
+                <p><input type="text" id="shoujihao" placeholder="请输入登录手机号" required="required"></p>
                 <p><input type="text" id="tupian" placeholder="请输入图片校验码" required="required">
                     <img src="./img/imgCode.jpg" alt="">
                 </p>
@@ -139,7 +137,7 @@
                 <p><input type="password" name="" id="mima" placeholder="请输入新密码" required="required"></p>
                 <p><input type="password" id="querenmima" placeholder="确定新密码" required="required"></p>
                 <p><button class="liji" onclick="fn()" id="submit">立即注册</button></p>
-            </form>
+            </section>
         </div>
     </section>
     <!-- 引入共用底部 -->
@@ -214,15 +212,13 @@
     user.onfocus = function () {
         user.placeholder = '请输入以字母开头最多10位的用户名'
     }
+    var reg = /^[A-z]\w{0,9}$/;
     user.onblur = function () {
-        var reg = /^[A-z]\w{0,9}$/;
         if (user.value.length >= 10) {
             alert('不能大于10位数')
         } else if (!reg.test(user.value)) {
             alert('输入格式不正确');
         }
-
-
     }
     var mima = document.getElementById('mima')
     var querenmima = document.getElementById('querenmima')
@@ -234,4 +230,17 @@
             alert('两次输入数据不一致')
         }
     }
+
+    // 提交按钮
+    function fn() {
+        if (yanzhengma.value == str && reg.test(user.value) && tupian.value == 'r2B7' && mima.value == querenmima.value) {
+            alert('注册成功！');
+            location.href = './enroll.html';
+            setCookie('user', user.value);
+            setCookie('mima', mima.value);
+        } else {
+            alert('注册失败！请完善信息');
+        }
+    }
 </script>
+<script src="./js/Cookie.js"></script>
