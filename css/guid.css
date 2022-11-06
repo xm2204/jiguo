@@ -36,7 +36,7 @@
   width: 1000px;
   margin: 0 auto;
 }
-.xuanr .kuang ul li {
+.xuanr .kuang ul .li1111 {
   background-color: #fff;
   height: 225px;
   width: 220px;
@@ -47,44 +47,44 @@
   border: 1px solid #e6e9e9;
   border-radius: 6px;
 }
-.xuanr .kuang ul li a img {
+.xuanr .kuang ul .li1111 a img {
   width: 220px;
   height: 120px;
   border-radius: 6px 6px 0 0;
 }
-.xuanr .kuang ul li a .wz5 {
+.xuanr .kuang ul .li1111 a .wz5 {
   background-size: 221px 19px;
   padding: 7px 10px 10px;
   background: url(../img/listbg.jpg) no-repeat left 97px;
 }
-.xuanr .kuang ul li a .wz5 p {
+.xuanr .kuang ul .li1111 a .wz5 p {
   font-size: 14px;
   height: 45px;
   overflow: hidden;
   color: #474747;
 }
-.xuanr .kuang ul li a .wz5 .tub2 {
+.xuanr .kuang ul .li1111 a .wz5 .tub2 {
   width: 200px;
   height: 48px;
   box-sizing: border-box;
   padding: 13px 0;
 }
-.xuanr .kuang ul li a .wz5 .tub2 .tub3 {
+.xuanr .kuang ul .li1111 a .wz5 .tub2 .tub3 {
   color: #a3a3a3;
   float: right;
 }
-.xuanr .kuang ul li a .wz5 .tub2 .tub3 span {
+.xuanr .kuang ul .li1111 a .wz5 .tub2 .tub3 span {
   display: inline-block;
   vertical-align: middle;
   padding-left: 14px;
   margin-left: 3px;
 }
-.xuanr .kuang ul li a .wz5 .tub2 .tub3 .x3 {
+.xuanr .kuang ul .li1111 a .wz5 .tub2 .tub3 .x3 {
   background: url(../img/xinRedo.png) no-repeat left center;
   background-size: 13px 13px;
   font-size: 12px;
 }
-.xuanr .kuang ul li a .wz5 .tub2 .tub3 .x4 {
+.xuanr .kuang ul .li1111 a .wz5 .tub2 .tub3 .x4 {
   background: url(../img/reply.png) no-repeat left center;
   font-size: 12px;
 }

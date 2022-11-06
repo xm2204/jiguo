@@ -172,3 +172,14 @@
 .wbu .nrong .js2 .sy5 a {
   color: #a3a3a3;
 }
+
+.tuichu {
+  position: absolute;
+  border: 1px solid red;
+  background-color: white;
+  padding: 5px 10px;
+  top: 25px;
+  left: 1475px;
+  display: none;
+  /* display: block; */
+}  

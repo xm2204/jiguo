@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/tw.css">
+    <style>
+        .td .nr .td-ul li:nth-of-type(1)>a {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -49,7 +54,7 @@
     <section class="daojishi">
         <div class="right">
             <h2>幻响小贝HiFi2.1音箱</h2>
-            <p class="a1"><span>126人申请</span><span>￥599</span><span>20台</span></p>
+            <p class="a4"><span>126人申请</span><span>￥599</span><span>20台</span></p>
             <p class="timer">申请时间剩余：</p>
             <button onclick="fn()">立即申请</button>
         </div>
@@ -536,7 +541,24 @@
         </iframe>
     </div>
 </body>
-</html>
+</html><script src="./js/swiper-bundle.min.js"></script>
 <script src="./play/js/jquery.min.js"></script>
-<script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/index.js"></script>
+<script src="./js/Cookie.js"></script>
+<script>
+    var zhuce = document.getElementsByClassName('a3')[0]
+    var tuichu = document.getElementsByClassName('tuichu')[0]
+    if (getCookie('user') == '' || getCookie('user') == null) {
+        zhuce.innerHTML = '注册'
+    } else {
+        zhuce.innerHTML = getCookie('user')
+        tuichu.style.display = 'block';
+        function exitu() {
+            removeCookie('user');
+            zhuce.innerHTML='注册'
+            tuichu.style.display = 'none';
+            //刷新部分
+            // load_data();
+        }
+    }
+</script>

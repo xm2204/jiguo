@@ -267,3 +267,21 @@
     }
 </script>
 <script src="./js/Cookie.js"></script>
+<script src="./js/Cookie.js"></script>
+<script>
+    var zhuce = document.getElementsByClassName('a3')[0]
+    var tuichu = document.getElementsByClassName('tuichu')[0]
+    if (getCookie('user') == '' || getCookie('user') == null) {
+        zhuce.innerHTML = '注册'
+    } else {
+        zhuce.innerHTML = getCookie('user')
+        tuichu.style.display = 'block';
+        function exitu() {
+            removeCookie('user');
+            zhuce.innerHTML='注册'
+            tuichu.style.display = 'none';
+            //刷新部分
+            // load_data();
+        }
+    }
+</script>

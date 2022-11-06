@@ -69,7 +69,7 @@ for (var item of data_){
 
 }
 
-var ul2 = document.querySelector('ul');
+var ul2 = document.querySelector('.liii');
 ul2.innerHTML += str;
 }
 

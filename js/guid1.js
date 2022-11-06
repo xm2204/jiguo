@@ -26,7 +26,7 @@ var str = "";
 for (var item of data_){
 
     str +=`
-    <li>
+    <li class="li1111">
                     <a href="../pen.html">
                         <img src="${item.img}" alt="">
                         <div class="wz5">
@@ -48,7 +48,7 @@ for (var item of data_){
 
 }
 
-var ul2 = document.querySelector('ul');
+var ul2 = document.querySelector('.liii');
 ul2.innerHTML += str;
 }
 
