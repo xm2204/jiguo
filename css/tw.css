@@ -4,21 +4,17 @@
   text-decoration: none;
   list-style: none;
 }
-
 .f {
   float: left;
 }
-
 .r {
   float: right;
 }
-
 .td {
   height: 76px;
   border-bottom: 1px solid #cecfcf;
   box-shadow: 0 0 5px #cecfcf inset;
 }
-
 .td .nr {
   width: 1000px;
   min-width: 1000px;
@@ -26,19 +22,16 @@
   margin: 0 auto;
   height: 76px;
 }
-
 .td .nr .logo img {
   height: 51px;
   margin-top: 13px;
   float: left;
 }
-
 .td .nr .td-ul {
   width: 550px;
   padding: 28px 10px 0 40px;
   float: left;
 }
-
 .td .nr .td-ul li a {
   transition: color 0.2s ease;
   padding: 0 25px;
@@ -46,11 +39,9 @@
   color: #a3a3a3;
   float: left;
 }
-
 .td .nr .td-ul li a:hover {
   color: red;
 }
-
 .td .nr .a1 #login {
   background: url(../img/search.png) no-repeat 1px 1px;
   transition: transform 0.08s ease;
@@ -61,14 +52,12 @@
   margin-top: 28px;
   margin-right: 85px;
 }
-
 .td .nr .a1 #login:hover {
   transform: scale(1.1);
 }
-
 .td .nr .a2 .a3 {
   display: inline-block;
-  padding:5px 10px;
+  width: 50px;
   height: 30px;
   line-height: 30px;
   font-size: 16px;
@@ -82,138 +71,104 @@
   left: 1175px;
   color: #fe5341;
 }
-
 .td .nr .a2 .a3:hover {
   color: #fff;
   background-color: red;
 }
-
 .wbu {
   height: 360px;
   background-color: #505050;
   padding: 40px 0 15px;
 }
-
 .wbu .nrong {
   width: 1000px;
   height: 250px;
   margin: 0 auto;
 }
-
 .wbu .nrong .erwm img {
   width: 160px;
   height: 160px;
   float: left;
 }
-
 .wbu .nrong .wenz1 {
   width: 140px;
   float: left;
   margin-left: 22px;
 }
-
 .wbu .nrong .wenz1 .wenz2 {
   font-size: 13px;
   color: #a3a3a3;
   margin-top: 20px;
 }
-
 .wbu .nrong .wenz1 .wenz3 {
   font-size: 13px;
   color: #a3a3a3;
   margin-top: 20px;
 }
-
 .wbu .nrong .js {
   width: 100px;
   float: left;
   margin-left: 22px;
 }
-
 .wbu .nrong .js .sy {
   font-size: 16px;
   color: #fff;
 }
-
 .wbu .nrong .js .sy2 {
   font-size: 13px;
   color: #a3a3a3;
   margin-top: 20px;
 }
-
 .wbu .nrong .js .sy2 a {
   color: #a3a3a3;
 }
-
 .wbu .nrong .js1 {
   width: 140px;
   float: left;
   margin-left: 22px;
 }
-
 .wbu .nrong .js1 .sy {
   font-size: 16px;
   color: #fff;
 }
-
 .wbu .nrong .js1 .sy2 {
   font-size: 13px;
   color: #a3a3a3;
   margin-top: 20px;
 }
-
 .wbu .nrong .js1 .sy2 a {
   color: #a3a3a3;
 }
-
 .wbu .nrong .js1 .sy5 {
   font-size: 13px;
   color: #a3a3a3;
   margin-top: 20px;
 }
-
 .wbu .nrong .js1 .sy5 a {
   color: #a3a3a3;
 }
-
 .wbu .nrong .js2 {
   width: 148px;
   float: left;
   margin-left: 22px;
 }
-
 .wbu .nrong .js2 .sy {
   font-size: 16px;
   color: #fff;
 }
-
 .wbu .nrong .js2 .sy2 {
   font-size: 13px;
   color: #a3a3a3;
   margin-top: 20px;
 }
-
 .wbu .nrong .js2 .sy2 a {
   color: #a3a3a3;
 }
-
 .wbu .nrong .js2 .sy5 {
   font-size: 13px;
   color: #a3a3a3;
   margin-top: 20px;
 }
-
 .wbu .nrong .js2 .sy5 a {
   color: #a3a3a3;
-}
-
-.tuichu {
-  position: absolute;
-  border: 1px solid red;
-  background-color: white;
-  padding: 5px 10px;
-  top: 25px;
-  left: 1475px;
-  display: none;
-  /* display: block; */
 }
