@@ -7,11 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>申请中</title>
     <link rel="stylesheet" href="./less/public.css">
+
+    <link rel="stylesheet" href="../css/tw.css">
 </head>
 
 <body>
-    <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src="../head.html" width="100%"
-        height="100px"></iframe>
+    <div class="td">
+        <!-- 内容 -->
+        <div class="nr">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="../img/logonew.png" alt="">
+                </a>
+            </div>
+
+            <!-- 文字 -->
+            <ul class="td-ul">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../play/play.html">酷玩</a></li>
+                <li><a href="../guid/guid1.html">导购</a></li>
+                <li><a href="../use/public.html" style="color:red">试用</a></li>
+                <li><a href="../report/report.html">报告</a></li>
+            </ul>
+            <!-- 注册 -->
+            <div class="a1"><a href="" id="login"></a></div>
+            <!-- 登录 -->
+            <div class="a2">
+                <a href="../register.html" class="a3">注册</a>
+                <button class="tuichu" onclick="exitu()">退出</button>
+            </div>
+        </div>
+    </div>
+
+
     <div class="box">
         <div class="in-h">
             <h1>免费试用</h1>
@@ -305,3 +333,21 @@
 
 </html>
 <script src="../js/public.js"></script>
+<script src="../js/Cookie.js"></script>
+<script>
+    var zhuce = document.getElementsByClassName('a3')[0]
+    var tuichu = document.getElementsByClassName('tuichu')[0]
+    if (getCookie('user') == '' || getCookie('user') == null) {
+        zhuce.innerHTML = '注册'
+    } else {
+        zhuce.innerHTML = getCookie('user')
+        tuichu.style.display = 'block';
+        function exitu() {
+            removeCookie('user');
+            zhuce.innerHTML = '注册'
+            tuichu.style.display = 'none';
+            //刷新部分
+            // load_data();
+        }
+    }
+</script>
