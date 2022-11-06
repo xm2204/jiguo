@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.dak {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+.dak .kuang {
+  width: 1000px;
+  height: 4460px;
+  margin: -4px auto;
+}
+.dak .kuang .fx {
+  width: 270px;
+  height: 110px;
+  border: 1px solid #ebeaea;
+  box-shadow: 0 1px 1px 1px #eee;
+  border-radius: 5px;
+  float: right;
+}
+.dak .kuang .fx .xih {
+  width: 133px;
+  height: 108px;
+  background-color: #fff;
+  display: inline-block;
+}
+.dak .kuang .fx .xih a {
+  background: url(../img/xinRedo.png) no-repeat 50px 25px;
+  display: inline-block;
+  width: 133px;
+  height: 108px;
+  text-align: center;
+  line-height: 140px;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+.dak .kuang .fx .xih a:hover {
+  color: red;
+  background: url(../img/xinRedh.png) no-repeat 50px 25px;
+}
+.dak .kuang .fx .fx {
+  width: 133px;
+  height: 108px;
+  background-color: #fff;
+  border-left: 1px solid rgba(153, 153, 153, 0);
+  border-radius: 0%;
+  display: inline-block;
+}
+.dak .kuang .fx .fx a {
+  background: url(../img/share_yj1.png) no-repeat 52px 27px;
+  display: inline-block;
+  width: 133px;
+  height: 108px;
+  text-align: center;
+  line-height: 140px;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+.dak .kuang .fx .fx a:hover {
+  color: #000;
+  background: url(../img/shareh_yj1.png) no-repeat 52px 27px;
+}
+.dak .kuang .wenz1 {
+  width: 1000px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+  color: #999999;
+}
+.dak .kuang .kuang2 {
+  width: 700px;
+  height: 4340px;
+  background: #fff;
+  display: inline-block;
+}
+.dak .kuang .kuang2 .gb {
+  width: 100%;
+  height: 126px;
+  border-bottom: 1px solid #999999;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.dak .kuang .kuang2 .gb p {
+  font-size: 26px;
+}
+.dak .kuang .kuang2 .gb .shushu {
+  margin-top: 20px;
+}
+.dak .kuang .kuang2 .gb .shushu .t {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: url(../img/tx.jpg) no-repeat;
+  display: inline-block;
+  float: left;
+}
+.dak .kuang .kuang2 .gb .shushu p {
+  float: left;
+  font-size: 12px;
+  color: #999999;
+  margin-left: 5px;
+  line-height: 20px;
+}
+.dak .kuang .kuang2 .gb .shushu p:nth-of-type(2) {
+  float: right;
+}
+.dak .kuang .kuang2 .nr {
+  padding: 19px 24px 20px;
+  font-size: 14px;
+}
+.dak .kuang .kuang2 .nr .gangbi {
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  font-weight: 900;
+}
+.dak .kuang .kuang2 .sx {
+  width: 100%;
+  height: 144px;
+  padding: 35px 0 35px 20px;
+  font-size: 14px;
+}
+.dak .kuang .kuang2 .sx p a {
+  color: #999999;
+}
