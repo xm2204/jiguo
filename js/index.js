@@ -1,3 +1,102 @@
+// 使用ajax渲染数据
+//酷玩-最新
+let box = $("#box");
+let str = ""
+$(function () {
+    // 加载更多
+    $('#btn').on('click', function () {
+        setTimeout(() => {
+            $.ajax({
+                url: "http://127.0.0.1:3000/play/new", //api接口
+                type: 'get', //传输方式 get post
+                dataType: "json",  // 传入对象类型json txt 
+                success: function (data) {   //数据返回成功的一个回调函数
+                    let users = data;
+                    for (let i = 0; i <= users.length - 1; i++) {
+                        let datas = users[0];
+                        datas.length = 4;
+                        for (let j = 0; j <= datas.length - 1; j++) {
+                            str = ` 
+                            <li class='box-li'>
+        <img src="${datas[j].img}">
+        <div>
+             <p>${datas[j].description}<br>
+             <span>${datas[j].text}</span></p>                             
+            <div>
+                <span>${datas[j].price}</span>
+                <div>
+                    <span>
+                         <img src="./img/xin.png"/>${datas[j].like}
+                     </span>
+                    <span>
+                         <img src="./img/reply.png"/>${datas[j].words}</span> 
+                </div>
+            </div>
+        </div>
+        </li>
+                                `
+                            $("#box").append(str)
+                        }
+                    }
+                },
+                //数据返回不成功提示
+                error: function (e) {
+                    alert("数据显示失败")
+                }
+            })
+        }, 2000);
+    })
+})
+
+// // 获取点击加载更多按钮
+// var btn = document.getElementById('btn')
+// // 点击时加载数据
+// btn.onclick = function () {
+//     function show_() {
+//         var ajax_ = new XMLHttpRequest() || new ActiveXObject("Microsoft.XMLHTTP");
+//         ajax_.open("get", "http://127.0.0.1:3000/useing/public");
+//         ajax_.send();
+//         ajax_.onreadystatechange = function () {
+//             if (ajax_.readyState === 4) {
+//                 if (ajax_.status === 200) {
+//                     var data = JSON.parse(ajax_.responseText);
+//                     console.log(data);
+//                     show(data);
+//                 }
+//             }
+//         }
+//         function show(data) {
+//             var str = '';
+//             for (item of data) {
+//                 str += `
+//         <li>
+//         <img src="${item.img}">
+//         <div>
+//              <p>${item.description}<br>
+//              <span>${item.text}</span></p>                             
+//             <div>
+//                 <span>${item.price}</span>
+//                 <div>
+//                     <span>
+//                          <img src="./img/xin.png"/>${item.like}
+//                      </span>
+//                     <span>
+//                          <img src="./img/reply.png"/>${item.words}</span> 
+//                 </div>
+//             </div>
+//         </div>
+//         </li>
+//         `
+//             }
+//             // ma.appendChild(div)
+//             var box = document.getElementById('box')
+//             // var li_ = document.createElement('li')
+//             // li_.className = 'box-li'
+//             box.appendChild(str)
+//         }
+//     }
+//     show_();
+// }
 //申请改变
 var a1_ = document.getElementsByClassName('a1')[0]
 var shenqing = a1_.firstElementChild
