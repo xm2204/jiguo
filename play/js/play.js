@@ -107,9 +107,7 @@ function Switching() {
     var flag = 0;
     for (var i = 0; i < img.length; i++) {
         img[i].onclick = function () {
-            // var n1=this.firstElementChild.nextElementSibling; 
             var n1 = this.nextElementSibling;
-            // var img=this.firstElementChild;
             if (flag == 0) {
                 n1.innerHTML++;
                 this.src = '../play/img/xinRedh.png';
