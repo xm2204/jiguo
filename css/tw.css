@@ -68,7 +68,7 @@
 
 .td .nr .a2 .a3 {
   display: inline-block;
-  width: 50px;
+  padding:5px 10px;
   height: 30px;
   line-height: 30px;
   font-size: 16px;
@@ -213,7 +213,7 @@
   background-color: white;
   padding: 5px 10px;
   top: 25px;
-  left: 1275px;
+  left: 1475px;
   display: none;
   /* display: block; */
 }
