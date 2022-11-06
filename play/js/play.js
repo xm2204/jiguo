@@ -13,6 +13,7 @@ let box = $("#box");
                         let datas = users[0];
                         datas.length = 4;
                         for (let j = 0; j <= datas.length - 1; j++) {
+                            
                             str = ` 
                                     <li>
                                         <a href="#">     
