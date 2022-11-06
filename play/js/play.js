@@ -15,7 +15,7 @@ $(function () {
                 for (let j = 0; j <= datas.length - 1; j++) {
                     str = ` 
                                     <li>
-                                        <a href="#">     
+                                        <a href="../product.html">     
                                             <img src="${datas[j].img}"/>
                                             <div class="info">
                                                 <p class="name">${datas[j].description}</p> 
@@ -65,7 +65,7 @@ $(function () {
                             
                             str = ` 
                                     <li>
-                                        <a href="#">     
+                                        <a href="../product.html">     
                                             <img src="${datas[j].img}"/>
                                             <div class="info">
                                                 <p class="name">${datas[j].description}</p> 
