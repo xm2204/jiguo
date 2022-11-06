@@ -51,7 +51,7 @@
   color: red;
 }
 
-.td .nr .a1 #login {
+.td .nr .a4 #login {
   background: url(../img/search.png) no-repeat 1px 1px;
   transition: transform 0.08s ease;
   width: 42px;
@@ -62,7 +62,7 @@
   margin-right: 85px;
 }
 
-.td .nr .a1 #login:hover {
+.td .nr .a4 #login:hover {
   transform: scale(1.1);
 }
 
