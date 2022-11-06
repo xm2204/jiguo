@@ -15,7 +15,7 @@ $(function () {
                 for (let j = 0; j <= datas.length - 1; j++) {
                     str = ` 
                                     <li>
-                                        <a href="#">     
+                                        <a href="../product.html">     
                                             <img src="${datas[j].img}"/>
                                             <div class="info">
                                                 <p class="name">${datas[j].description}</p> 
@@ -65,7 +65,7 @@ $(function () {
                             
                             str = ` 
                                     <li>
-                                        <a href="#">     
+                                        <a href="../product.html">     
                                             <img src="${datas[j].img}"/>
                                             <div class="info">
                                                 <p class="name">${datas[j].description}</p> 
@@ -108,9 +108,7 @@ function Switching() {
     var flag = 0;
     for (var i = 0; i < img.length; i++) {
         img[i].onclick = function () {
-            // var n1=this.firstElementChild.nextElementSibling; 
             var n1 = this.nextElementSibling;
-            // var img=this.firstElementChild;
             if (flag == 0) {
                 n1.innerHTML++;
                 this.src = '../play/img/xinRedh.png';

@@ -65,6 +65,7 @@ li {
 
     }
 }
+
 // 页面加载时出现的过度用的loading图 
 // .loading{
 //     width: 20px;
@@ -151,6 +152,7 @@ li {
                                 // background-color: chartreuse;
                                 .fl;
                                 cursor: pointer;
+
                                 &>img {
                                     width: 14px;
                                     height: 14px;
@@ -203,23 +205,24 @@ li {
         }
     }
 
-    &>.play-more {
-        width: @wid;
-        height: 30px;
-        line-height: 30px;
-        // background-color: aqua;
-        text-align: center;
+}
 
-        &>p {
-            display: inline-block;
-            font-size: 16px;
-            .col;
-            padding-left: 25px;
-            // background-color: aquamarine;
-            background: url(../../play/img/more.png)no-repeat 5px 13px;
-            cursor: pointer;
-            // background-color: aqua;
-        }
+.play-more {
+    width: @wid;
+    height: 30px;
+    line-height: 30px;
+    // background-color: aqua;
+    text-align: center;
+
+    &>p {
+        display: inline-block;
+        font-size: 16px;
+        .col;
+        padding-left: 25px;
+        // background-color: aquamarine;
+        background: url(../../play/img/more.png)no-repeat 5px 13px;
+        cursor: pointer;
+        // background-color: aqua;
     }
 }
 

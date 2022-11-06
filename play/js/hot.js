@@ -15,7 +15,7 @@ $(function () {
                 for (let j = 0; j <= datas.length - 1; j++) {
                     str = ` 
                                     <li>
-                                    <a href="../product.html">    //跳转到试用页面     
+                                    <a href="../product.html">   
                                             <img src="${datas[j].img}"/>
                                             <div class="info">
                                                 <p class="name">${datas[j].description}</p> 
@@ -64,7 +64,7 @@ $(function () {
                         for (let j = 0; j <= datas.length - 1; j++) {
                             str = ` 
                                     <li>
-                                    <a href="../product.html">    //跳转到试用页面     
+                                    <a href="../product.html">         
                                             <img src="${datas[j].img}"/>
                                             <div class="info">
                                                 <p class="name">${datas[j].description}</p> 
