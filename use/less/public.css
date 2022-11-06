@@ -75,6 +75,7 @@
   overflow: hidden;
 }
 .main .m_a .m_m {
+  box-sizing: border-box;
   width: 19%;
   height: 255px;
   float: left;
@@ -82,7 +83,7 @@
   background-color: #ffffff;
   border-radius: 6px;
   margin-top: 30px;
-  margin-right: 60px;
+  margin-right: 50px;
   /*首发*/
 }
 .main .m_a .m_m .m_r {
